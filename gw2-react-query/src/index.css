@@ -1,0 +1,68 @@
+:root { 
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; 
+}
+
+body { 
+  background:#f3f4f6; 
+  margin:0;
+}
+
+.container { 
+  max-width: 1024px; 
+  margin: 2rem auto; 
+  padding: 0 1rem; 
+}
+
+h1 { 
+  margin-bottom: 1rem; 
+}
+
+.grid { 
+  display: grid; 
+  grid-template-columns: 
+  repeat(auto-fit, minmax(280px, 1fr)); 
+  gap: 1rem; 
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1rem;
+  box-sizing: border-box; 
+}
+
+
+.card-header { 
+  display:flex; 
+  justify-content:space-between; 
+  align-items:center; 
+  margin-bottom:.75rem; 
+}
+
+.form { 
+  display:grid; 
+  gap:.5rem; 
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  max-width: 100%;       /* garante que não ultrapasse */
+  box-sizing: border-box; /* inclui padding/borda no cálculo da largura */
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: .5rem .75rem;
+}
+
+.row { 
+  display:flex; 
+  gap:.5rem; 
+  align-items:center; 
+}
+
+.list { 
+  display:grid; 
+  gap:.5rem; 
+  padding-left: 1rem; 
+}
